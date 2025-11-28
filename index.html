@@ -1,13 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinaByte – Portfolio</title>
+  <style>
+    :root {
+      --bg-main: #0d1117;
+      --bg-box: #161b22;
+      --border: #30363d;
+      --text-main: #e6edf3;
+      --accent: #58a6ff;
+      --accent-hover: #79b6ff;
+      --font: Arial, sans-serif;
+    }
+    
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg-main);
+      color: var(--text-main);
+    }
+    
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: var(--bg-box);
+      border-bottom: 1px solid var(--border);
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+    }
+    
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem 0;
+      background: var(--bg-box);
+      border-bottom: 1px solid var(--border);
+    }
+    
+    p {
+      line-height: 1.7rem;
+    }
+    
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+    
+    nav a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+    
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    
+    h2 {
+      border-left: 4px solid var(--accent);
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+    
+    .project-card {
+      background: var(--bg-box);
+      padding: 1.5rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      margin-bottom: 1.5rem;
+    }
+    
+    .project-card h3 {
+      margin: 0 0 1rem;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    .project-card p {
+      margin: 0;
+      
+      opacity: 0.9;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 3rem;
+      border-top: 1px solid var(--border);
+      background: var(--bg-box);
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+    
+    /* General anchor styling */
+    a {
+      color: var(--accent);
+      display: block;
+      margin: 1rem 0;
+      width: max-content;
+      transition: 0.2s ease;
+    }
+    
+    a:hover {
+      color: var(--accent-hover);
+    }
+  </style>
 </head>
 
 <body>
+  
+  <header>
+    <h1>MinaByte</h1>
+    <p>Freelance developer building front-ends & custom tools for tech companies.</p>
+  </header>
+  
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a solo freelance developer who creates clean, fast and modern front-end experiences.
+      I also build custom tools, scripts and small utilities that help tech teams improve workflows and speed up development.
+    </p>
+  </section>
+  
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Best Projects</h2>
+    
+    <div class="project-card">
+      <h3>Personal Ledger Web App</h3>
+      <p>A complete finance and transaction manager featuring charts, filters, closing balances, JSON/Excel/PDF export, undo/redo, and custom themes.</p>
+      <a href="https://minatonamikaze1763.github.io/Personal_ledger_2/">Vault Ledger</a>
+    </div>
+    
+    <div class="project-card">
+      <h3>E-Invoice Generator</h3>
+      <p>A tool to generate valid e-invoice JSON files for businesses in India. Supports structured GST formats with fast and accurate output.</p>
+      <a href="https://minatonamikaze1763.github.io/E-inv/">E-Invoice Generator</a>
+    </div>
+    
+    <div class="project-card">
+      <h3>PDF Tool</h3>
+      <p>An all-in-one PDF utility that lets you merge, split, convert JPG to PDF and PDF to JPG — with no usage limits or restrictions.</p>
+      <a href="https://minatonamikaze1763.github.io/PDF/">PDF Tool</a>
+    </div>
+    
+  </section>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you want to collaborate or need a custom tool or front-end project, feel free to reach out:</p>
+    <p>Email: <strong>minato.namikaze1763@gmail.com</strong></p>
+  </section>
+  
+  <footer>
+    © 2025 MinaByte — Freelance Developer
+  </footer>
   
 </body>
 
