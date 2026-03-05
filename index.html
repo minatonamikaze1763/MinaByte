@@ -111,6 +111,11 @@
       opacity: 0.7;
     }
     
+    ul li {
+      line-height: 1.8rem;
+      margin-bottom: .5rem;
+    }
+    
     /* General anchor styling */
     a {
       color: var(--accent);
@@ -152,17 +157,41 @@
   <section id="projects">
     <h2>Best Projects</h2>
     
+    
+    <div class="project-card">
+      <h3>E-Invoice Generator</h3>
+      <p>
+        A lightweight tool designed for Indian businesses to quickly generate valid
+        e-invoice JSON files compatible with the GST portal. The system follows the
+        required GST structure to ensure accurate and reliable output.
+      </p>
+      
+      <ul>
+        <li>Generate GST-compliant e-invoice JSON files instantly</li>
+        <li>Supports multiple items and tax calculations (CGST, SGST, IGST)</li>
+        <li>Unlimited e-invoice generation per day</li>
+        <li>Simple interface designed for dealers and accountants</li>
+        <li>Fast processing with structured GST data validation</li>
+        <li>Secure login system for authorized users</li>
+        <li>Email support for adding new buyers and items</li>
+        <li>Lightweight tool that runs directly in the browser</li>
+        <li>
+          1-month free trial available for new users. After the trial period, a paid monthly subscription will apply.
+          To activate your account, please send your GSTIN details (or a copy of your GST certificate) along with the
+          mobile number linked to the GSTIN to our email: minato.namikaze1763@gmail.com.
+        </li>
+      </ul>
+      
+      <a href="https://minatonamikaze1763.github.io/E-inv/" target="_blank">
+        Open E-Invoice Generator
+      </a>
+    </div>
     <div class="project-card">
       <h3>Personal Ledger Web App</h3>
       <p>A complete finance and transaction manager featuring charts, filters, closing balances, JSON/Excel/PDF export, undo/redo, and custom themes.</p>
       <a href="https://minatonamikaze1763.github.io/Personal_ledger_2/" target="_blank">Vault Ledger</a>
     </div>
     
-    <div class="project-card">
-      <h3>E-Invoice Generator</h3>
-      <p>A tool to generate valid e-invoice JSON files for businesses in India. Supports structured GST formats with fast and accurate output.</p>
-      <a href="https://minatonamikaze1763.github.io/E-inv/" target="_blank">E-Invoice Generator</a>
-    </div>
     
     <div class="project-card">
       <h3>PDF Tool</h3>
